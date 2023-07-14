@@ -1,0 +1,106 @@
+baseURL = 'https://problematicconsumer.net/'
+title = 'Problematic Consumer'
+description = "Problematic Consumer Blog"
+theme = 'PaperMod'
+
+canonifyURLs = true
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+pygmentsUseClasses = true
+
+[minify]
+disableXML = true
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[permalinks]
+posts = "/:title"
+
+[languages.en]
+languageName = "English"
+weight = 1
+
+[languages.en.taxonomies]
+category = "categories"
+tag = "tags"
+
+[[languages.en.menu.main]]
+name = "Archive"
+url = "archives"
+weight = 5
+
+[[languages.en.menu.main]]
+name = "Categories"
+url = "categories/"
+weight = 10
+
+[params]
+env = "production"
+description = "Problematic Consumer Blog"
+author = "Problematic Consumer"
+defaultTheme = "auto"
+ShowShareButtons = true
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+ShowToc = true
+
+[params.homeInfoParams]
+Title = "Hey!"
+Content = """
+I'm (a) Problematic Consumer! Flutter dev and Crypto enthusiast.
+- I love Free and Open Source Software (FOSS) and Decentralized Networks
+- Here I share my experiences with building and maintaining open source projects
+"""
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/problematicconsumer"
+
+[[params.socialIcons]]
+name = "mastodon"
+url = "https://fosstodon.org/@problematicconsumer"
+
+[[params.socialIcons]]
+name = "Rss"
+url = "index.xml"
+
+[params.assets]
+disableHLJS = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+noClasses = false
+
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.twitter]
+disabled = false
+enableDNT = true
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true
